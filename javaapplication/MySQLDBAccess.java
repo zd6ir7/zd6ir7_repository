@@ -28,7 +28,7 @@ public class MySQLDBAccess {
         try {
             String url = "jdbc:mysql://localhost/mydb";
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(url, "root", "kod@gk5$");
+            connection = DriverManager.getConnection(url, "detarame", "detarame");
             
             // SQLを宣言する。カラムidとpasswordに対して「?」を入れることで、これらはバインド変数であることを宣言する。
             String sql = "select * from usertable where id = ? and password = ?";

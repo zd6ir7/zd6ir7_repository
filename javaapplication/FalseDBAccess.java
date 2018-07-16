@@ -29,7 +29,7 @@ public class FalseDBAccess {
         try {
             String url = "jdbc:derby://localhost:1527/mydb";
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
-            connection = DriverManager.getConnection(url, "app", "app");
+            connection = DriverManager.getConnection(url, "detarame", "detarame");
             
             // Statementを用意する。
             statement = connection.createStatement();

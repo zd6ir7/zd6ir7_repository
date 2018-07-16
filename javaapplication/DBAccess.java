@@ -28,7 +28,7 @@ public class DBAccess {
         try {
             String url = "jdbc:derby://localhost:1527/mydb";
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
-            connection = DriverManager.getConnection(url, "app", "app");
+            connection = DriverManager.getConnection(url, "detarame", "detarame");
             
             // SQLを宣言する。カラムidとpasswordに対して「?」を入れることで、これらはバインド変数であることを宣言する。
             String sql = "select * from app.usertable where id = ? and password = ?";

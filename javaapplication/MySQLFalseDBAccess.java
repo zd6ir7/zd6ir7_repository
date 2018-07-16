@@ -29,7 +29,7 @@ public class MySQLFalseDBAccess {
         try {
             String url = "jdbc:mysql://localhost/mydb";
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(url, "root", "kod@gk5$");
+            connection = DriverManager.getConnection(url, "detarame", "detarame");
             
             // Statementを用意する。
             statement = connection.createStatement();
